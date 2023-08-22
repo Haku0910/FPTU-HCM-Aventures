@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 43f6ac1f19c207b4a9e2e9fff21370db
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Anisotropic
+    second: {fileID: 2100000, guid: 7ac480fa9c7868b4a85876a554659a70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Flat_Metal
+    second: {fileID: 2100000, guid: 6d89a43820169a84a8a1a151a8bfb9ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal
+    second: {fileID: 2100000, guid: 5691c16db6c486043a40381be83b597f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.001
+    second: {fileID: 2100000, guid: ab8471c4e847b084d93aaa6ac3d8ad9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.003
+    second: {fileID: 2100000, guid: 02170a8a0583643429eeafab38cb4d78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.004
+    second: {fileID: 2100000, guid: 66f7ce82507a8814182907d165b38261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.005
+    second: {fileID: 2100000, guid: 765347a3494a46b41aabda64d5449b2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.006
+    second: {fileID: 2100000, guid: 9cac1aa6e2976a34585bdee44f4bc06d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basic_Matte_Metal.007
+    second: {fileID: 2100000, guid: f5a4db6313334474fbd2b999496d3f35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clay
+    second: {fileID: 2100000, guid: f8cfefb134d6cbe4697d396d8edc0ba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 24095104995eada48845ff6099d77c7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallic_Plastic
+    second: {fileID: 2100000, guid: afce0e05919bc924184ae4389afd467e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nickel_Brushed_Clearcoat
+    second: {fileID: 2100000, guid: cb09ce8461f4a844c804b080c5654d99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WO_Wood_01
+    second: {fileID: 2100000, guid: d67c3ec00cce73747adfcbdcf3d45b73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ban chu nhat thu vien.002
+    second: {fileID: 2100000, guid: 16accd36377c2364e8398884153d94f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ban thu vien.002
+    second: {fileID: 2100000, guid: 92a9564bade9bb74f9bd4313f12e8b80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cau dao dien.002
+    second: {fileID: 2100000, guid: 8a55359bde8ff8e46887606c1b62f149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cua kinh.002
+    second: {fileID: 2100000, guid: a60ec0c6b9be4ef4f81d9327fb4b86ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: de ong nghiem.002
+    second: {fileID: 2100000, guid: 553471cb29bee59438eccad5a19ef723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engineer box.002
+    second: {fileID: 2100000, guid: bb294a11f9d7c344aa78c10b6fcfb9fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: enginer eqiupment.002
+    second: {fileID: 2100000, guid: f7adf52290c98724491ff7b9a8efb8d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor texture.002
+    second: {fileID: 2100000, guid: ef7298ef9e3905341a659be75f9293ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gia do ong chua chay.002
+    second: {fileID: 2100000, guid: 0c5b239eb68b03146b7115a7fb3b0485, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: heal box.002
+    second: {fileID: 2100000, guid: 3d4d3ecf624842341b9c5b46ca0e72dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: khung cua so.002
+    second: {fileID: 2100000, guid: 63564788e7573374c99b2b28e39b4491, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: man cua.002
+    second: {fileID: 2100000, guid: eb13f04b651eb3e4a8e066a20b369759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microscope.002
+    second: {fileID: 2100000, guid: d1748b1ecb66d0c4e88dd0f433278d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ong chua chay.002
+    second: {fileID: 2100000, guid: 8c87399cd3f015f478a89a78fd64e0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: san_co
+    second: {fileID: 2100000, guid: 1f1f27a7b842778469610601903d5b4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: san_thuong
+    second: {fileID: 2100000, guid: c33ff4d6f3011af4a87beed5a9490623, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tivi.002
+    second: {fileID: 2100000, guid: 02d6116d14e7b574299aa56e45359ec0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tuong tran san
+    second: {fileID: 2100000, guid: 0d61035580febf5428f5b240d98b4294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tuong tran san.002
+    second: {fileID: 2100000, guid: a9ae90f0cd104c34c80a5a023ffdacd0, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ban chu nhat thu vien-01
+    second: {fileID: 2800000, guid: c1b4981fddc37f245a9b46cac8e27924, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ban thu vien-01
+    second: {fileID: 2800000, guid: 0023c07b3ba2367418283c91cebbd228, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cau dao dien-01
+    second: {fileID: 2800000, guid: 5c1d3ea7357b30d4fb90e5296baffbd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: coast_sand_rocks_02_diff_4k
+    second: {fileID: 2800000, guid: 68baedf04a3f76a41a113aedd0134674, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: coast_sand_rocks_02_nor_gl_4k
+    second: {fileID: 2800000, guid: 4d56d5168a0732a4598a80052b7b19c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: coast_sand_rocks_02_rough_4k
+    second: {fileID: 2800000, guid: a5bb9342bbdac2b4d8208a6386590bfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: de ong nghiem
+    second: {fileID: 2800000, guid: 1909c7e66164e594cadd019f22292d5b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: engineer box-01
+    second: {fileID: 2800000, guid: bd22703bc4ac4d14dac99a9b79efcd90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enginer equipment-01
+    second: {fileID: 2800000, guid: 9ba82428ac30dc44893b6b63671bf894, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gia do ong chua chay
+    second: {fileID: 2800000, guid: 9cc2f38693d4c4547991dd6ad3aecd90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: heal box-01
+    second: {fileID: 2800000, guid: 9b6cb295d917c8b4086c6ac64c5a27eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: man cua-01
+    second: {fileID: 2800000, guid: 3ee5a4e70d9e4e540827029aff1ded5c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: microscope-01
+    second: {fileID: 2800000, guid: 8c741f8ce170b854f9c9b87bc4d7f191, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mossy-ground1-albedo
+    second: {fileID: 2800000, guid: 842b1ac67ecef2648ae249b8be2eedea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mossy-ground1-metal
+    second: {fileID: 2800000, guid: 38f09b94799013d4aa13ba79e94a7a5c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mossy-ground1-roughness
+    second: {fileID: 2800000, guid: cc5a64b7db4580a42827613775b9b855, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tivi-01
+    second: {fileID: 2800000, guid: 8644a85c9508b5647a9ddcf7ed1e42e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vien cua so
+    second: {fileID: 2800000, guid: 4f3383dcac5c76243bde23cea4260dbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: voi chua chay-01
+    second: {fileID: 2800000, guid: d577d7f2d922a34458851990ac86d624, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wooden floor texture-01
+    second: {fileID: 2800000, guid: bff892c0fd2fb004b850f4f33184b190, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u2014Pngtree\u2014upright rectangular transparent glass mirror_5429580"
+    second: {fileID: 2800000, guid: 34abf1a2c3f412f459045cdee55eefe2, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

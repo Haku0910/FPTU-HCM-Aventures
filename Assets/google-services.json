@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "668814474990",
+    "project_id": "siginunity",
+    "storage_bucket": "siginunity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668814474990:android:d28a7f6cfa627b90997dff",
+        "android_client_info": {
+          "package_name": "com.iss.googlelogintutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668814474990-qft1eihl3ns5tqtc72foce9f2lve3hba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iss.googlelogintutorial",
+            "certificate_hash": "df530a4f439b379808d421975e7a2e71ae2bac14"
+          }
+        },
+        {
+          "client_id": "668814474990-4p5vepvjsqil4e9cl8imk3covmv6evmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA46eSFVpxXh2LBRiH2UtPEB11ZhCGPfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668814474990-4p5vepvjsqil4e9cl8imk3covmv6evmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

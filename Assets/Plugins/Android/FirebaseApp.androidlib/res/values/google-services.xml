@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">668814474990</string>
+  <string name="google_storage_bucket" translatable="false">siginunity.appspot.com</string>
+  <string name="project_id" translatable="false">siginunity</string>
+  <string name="google_api_key" translatable="false">AIzaSyBA46eSFVpxXh2LBRiH2UtPEB11ZhCGPfU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBA46eSFVpxXh2LBRiH2UtPEB11ZhCGPfU</string>
+  <string name="google_app_id" translatable="false">1:668814474990:android:d28a7f6cfa627b90997dff</string>
+  <string name="default_android_client_id" translatable="false">668814474990-qft1eihl3ns5tqtc72foce9f2lve3hba.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">668814474990-4p5vepvjsqil4e9cl8imk3covmv6evmo.apps.googleusercontent.com</string>
+</resources>
