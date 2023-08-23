@@ -69,10 +69,7 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         bool check = command.Equals(a, StringComparison.OrdinalIgnoreCase);
         if (check)
         {
-            string value = chatField.text.Substring(5).Trim();
-            double money = double.Parse(value);
-            Debug.Log("Admin code");
-            gameCoins.UseCoins(-money);
+            AddMoney();
         }
 
         if (privateReceiver == "")
@@ -80,6 +77,40 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
             chatClient.PublishMessage("FPT Channel", currentChat);
             chatField.text = "";
             currentChat = "";
+        }
+    }
+
+    //only admin use for testing add money 
+    private void AddMoney()
+    {
+        GameObject find711 = GameObject.Find("711");
+        if (find711 != null)
+        {
+            Transform findAPI = find711.transform.Find("API");
+            if (findAPI != null)
+            {
+                Transform gamecoin = findAPI.transform.Find("Coins");
+                if (gamecoin != null)
+                {
+                    gameCoins = gamecoin.GetComponent<GameCoins>();
+                    string value = chatField.text.Substring(5).Trim();
+                    double money = double.Parse(value);
+                    Debug.Log("Admin code");
+                    gameCoins.CheatCoins(-money);
+                }
+                else
+                {
+                    Debug.Log("không tìm thấy game object coin");
+                }
+            }
+            else
+            {
+                Debug.Log("không tìm thấy API");
+            }
+        }
+        else
+        {
+            Debug.Log("không tim thấy cửa hàng 711");
         }
     }
 

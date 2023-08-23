@@ -1,4 +1,5 @@
 ﻿using Photon.Pun;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -17,7 +18,12 @@ public class Interactor : MonoBehaviourPunCallbacks, IPointerClickHandler
 
     [SerializeField] private AudioSource audio;
 
+    public List<LocationData> location;
+    private List<LocationData> locationDataList = new List<LocationData>();
+
+
     private Interactable interactable;
+
 
     private void Update()
     {
@@ -31,6 +37,7 @@ public class Interactor : MonoBehaviourPunCallbacks, IPointerClickHandler
             {
                 if (interactable != null)
                 {
+
                     if (!interactionPromptUI.IsDisplayText)
                     {
                         interactionPromptUI.SetUp(interactable.InteractionPromp);
@@ -39,6 +46,7 @@ public class Interactor : MonoBehaviourPunCallbacks, IPointerClickHandler
                     {
                         interactable.Interact(this);
                     }
+
                 }
             }
         }
@@ -68,4 +76,5 @@ public class Interactor : MonoBehaviourPunCallbacks, IPointerClickHandler
             interactable.Interact(this);
         }
     }
+
 }

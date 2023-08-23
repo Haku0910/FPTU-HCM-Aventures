@@ -43,10 +43,23 @@ public class GameCoins : MonoBehaviour
             player.totalPoint = player.totalPoint - amount;
             player.isplayer = true;
             StartCoroutine(NamePrefab.Instance.UpdatePlayer(player));
-            allCoinsUIText.text = Coins.ToString();
-            ManageButton.Instance.UpdateToCoint(Coins);
+            allCoinsUIText.text = player.totalPoint.ToString();
+            ManageButton.Instance.UpdateToCoint(player.totalPoint);
         }
+    }
 
+    public void CheatCoins(double amount)
+    {
+        Debug.Log("amount" + amount);
+        Coins -= amount;
+        if (player != null)
+        {
+            player.totalPoint = player.totalPoint - amount;
+            player.isplayer = true;
+            StartCoroutine(NamePrefab.Instance.UpdatePlayer(player));
+            allCoinsUIText.text = player.totalPoint.ToString();
+            ManageButton.Instance.UpdateToCoint(player.totalPoint);
+        }
     }
 
     public bool HasEnoughCoins(double amount)

@@ -1,60 +1,36 @@
 {
     "m_SelectedDeviceId": "pnizkrvs9hvco7iv",
     "m_SelectedPackage": {
-        "deviceId": "pnizkrvs9hvco7iv",
-        "name": "com.iss.googlelogintutorial",
-        "processId": 12773,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "pnizkrvs9hvco7iv",
-            "name": "com.iss.googlelogintutorial",
-            "processId": 19457,
-            "exited": true
-        },
-        {
-            "deviceId": "pnizkrvs9hvco7iv",
-            "name": "ginlemon.flowerfree",
-            "processId": 18171,
-            "exited": true
-        },
-        {
-            "deviceId": "pnizkrvs9hvco7iv",
-            "name": "com.iss.googlelogintutorial",
-            "processId": 28652,
-            "exited": true
-        },
-        {
-            "deviceId": "pnizkrvs9hvco7iv",
-            "name": "com.iss.googlelogintutorial",
-            "processId": 8541,
-            "exited": true
-        },
-        {
-            "deviceId": "pnizkrvs9hvco7iv",
-            "name": "com.nexon.bluearchive",
-            "processId": 29021,
-            "exited": false
-        },
-        {
-            "deviceId": "pnizkrvs9hvco7iv",
             "name": "com.android.settings",
             "processId": 24262,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "pnizkrvs9hvco7iv",
             "name": "ginlemon.flowerfree",
             "processId": 7735,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "pnizkrvs9hvco7iv",
             "name": "com.iss.googlelogintutorial",
             "processId": 12773,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "pnizkrvs9hvco7iv",
+            "name": "com.iss.googlelogintutorial",
+            "processId": 26050,
+            "exited": true
         }
     ],
     "m_Tags": {

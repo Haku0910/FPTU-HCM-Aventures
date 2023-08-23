@@ -2,23 +2,43 @@ using Photon.Pun;
 using Photon.Realtime;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SettingMenu : MonoBehaviourPunCallbacks
 {
-    public AudioMixer audioMixer;
+    public Slider volumeSlider;
     public GameObject pannel;
 
     private void Start()
     {
         pannel.gameObject.SetActive(false);
+        if (!PlayerPrefs.HasKey("musicVolume"))
+        {
+            PlayerPrefs.SetFloat("musicVolume", (float)0.5);
+            Load();
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("musicVolume", (float)0.5);
+            Load();
+        }
     }
 
-    public void setVolume(float vol)
+    public void setVolume()
     {
-        audioMixer.SetFloat("volume", vol);
+        AudioListener.volume = volumeSlider.value;
+        Save();
+    }
+
+    private void Load()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+    }
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
 
     public void SetQuality(int qualityIndex)
@@ -47,7 +67,7 @@ public class SettingMenu : MonoBehaviourPunCallbacks
             }
             else
             {
-                Debug.Log("Delete request successful"); 
+                Debug.Log("Delete request successful");
                 if (PhotonNetwork.IsConnected)
                 {
                     if (PhotonNetwork.InRoom)
@@ -65,8 +85,8 @@ public class SettingMenu : MonoBehaviourPunCallbacks
             }
         }
     }
-   
-   
+
+
     public override void OnDisconnected(DisconnectCause cause)
     {
         base.OnDisconnected(cause);

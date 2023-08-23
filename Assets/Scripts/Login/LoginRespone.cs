@@ -11,5 +11,5 @@ public class LoginResponse
     public bool isplayer;
     public float totalTime;
     public float totalPoint;
-    public string status;
+    public string schoolStatus;
 }

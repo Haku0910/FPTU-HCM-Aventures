@@ -29,6 +29,8 @@ public class LoginController : MonoBehaviourPunCallbacks
     public GameObject errorGameText;
     private bool isPlayer = true;
     private bool isCheckPlay = true;
+    private SessionManager sessionManager = new SessionManager();
+    public GameObject loading;
     // Defer the configuration creation until Awake so the web Client ID
     // Can be set via the property inspector in the Editor.
     void Awake()
@@ -43,7 +45,6 @@ public class LoginController : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        PlayerPrefs.DeleteAll();
         InitFirebase();
         PhotonNetwork.AutomaticallySyncScene = true;
         // T?m d?ng h?ng ??i tin nh?n c?a Photon
@@ -159,11 +160,11 @@ public class LoginController : MonoBehaviourPunCallbacks
                         {
                             schoolId = loginResponse.data.schoolId;
                             PlayerPrefs.SetString("schoolId", schoolId);
-                            Debug.Log("Status: " + loginResponse.data.status);
-                            if (loginResponse.data.status.Equals("ACTIVE"))
+                            Debug.Log("Status: " + loginResponse.data.schoolStatus);
+                            if (loginResponse.data.schoolStatus.Equals("ACTIVE"))
                             {
                                 DataModel eventData = JsonUtility.FromJson<DataModel>(webRequest.downloadHandler.text);
-                                if (eventData.data == null)
+                                if (eventData.data == null || eventData.data.taskDtos == null || eventData.data.eventName == null)
                                 {
                                     isCheckPlay = false;
                                     errorGameText.SetActive(true);
@@ -171,10 +172,11 @@ public class LoginController : MonoBehaviourPunCallbacks
                                     Debug.Log("Không tồn tại sự kiện");
                                     userNameField.text = "";
                                     passWordField.text = "";
+                                    loading.gameObject.SetActive(false);
                                 }
                                 else
                                 {
-                                    if (loginResponse.data.nickname != null)
+                                    if (loginResponse.data.nickname != null && loginResponse.data.isplayer == true)
                                     {
                                         Debug.Log("Người chơi tồn tại");
                                         Debug.Log("player nick name" + loginResponse.data.nickname);
@@ -182,6 +184,7 @@ public class LoginController : MonoBehaviourPunCallbacks
                                         schoolName = loginResponse.data.schoolName;
                                         isPlayer = true;
                                         ConnectToPhoton();
+                                        loading.gameObject.SetActive(false);
 
                                     }
                                     else
@@ -191,6 +194,7 @@ public class LoginController : MonoBehaviourPunCallbacks
                                         schoolName = loginResponse.data.schoolName;
                                         isPlayer = false;
                                         ConnectToPhoton();
+                                        loading.gameObject.SetActive(false);
 
                                     }
                                 }
@@ -203,10 +207,12 @@ public class LoginController : MonoBehaviourPunCallbacks
                                 Debug.Log("Không tồn tại");
                                 userNameField.text = "";
                                 passWordField.text = "";
+                                loading.gameObject.SetActive(false);
 
                             }
                         }
                     }
+                    loading.gameObject.SetActive(false);
                 }
                 else
                 {
@@ -216,14 +222,17 @@ public class LoginController : MonoBehaviourPunCallbacks
                     Debug.Log("Không tồn tại");
                     userNameField.text = "";
                     passWordField.text = "";
+                    loading.gameObject.SetActive(false);
                 }
             }
             else
             {
                 isCheckPlay = false;
                 Debug.Log("Lỗi khi gửi yêu cầu đến API: " + request.error);
+                loading.gameObject.SetActive(false);
             }
         }
+        loading.gameObject.SetActive(false);
     }
 
 
@@ -252,20 +261,29 @@ public class LoginController : MonoBehaviourPunCallbacks
         Debug.Log("Sigin In");
         string email = userNameField.text.Trim();
         string passcode = passWordField.text.Trim();
+        loading.gameObject.SetActive(true);
 
         if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(passcode))
         {
             Debug.Log("Vui lòng điền đầy đủ thông tin.");
             errorGameText.SetActive(true);
             errorText.text = "Vui lòng điền đầy đủ thông tin.";
+            loading.gameObject.SetActive(false);
             return;
         }
         else
         {
-            Debug.Log("sigin vao photon");
-
-            StartCoroutine(CheckUserByEmail(email, passcode));
-
+            if (sessionManager.IsUserLoggedIn(email, passcode))
+            {
+                Debug.Log("Tài khoản đã đăng nhập từ một thiết bị khác.");
+                loading.gameObject.SetActive(false);
+                return;
+            }
+            else
+            {
+                Debug.Log("sigin vao photon");
+                StartCoroutine(CheckUserByEmail(email, passcode));
+            }
         }
     }
 

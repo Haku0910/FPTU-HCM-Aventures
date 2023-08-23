@@ -46,10 +46,7 @@ namespace Assets.Scripts.Location
         [SerializeField] private GameObject panel;
         bool isBack = false;
 
-
         List<string> floor = new List<string> { "Tầng trệt", "Lầu 1", "Lầu 2", "Lầu 3", "Khu vực đặc biệt" };
-
-
         private void Awake()
         {
             StartCoroutine(GetFullLocationName(GetFullLocationName));
@@ -143,7 +140,6 @@ namespace Assets.Scripts.Location
                     // Parse JSON response to extract "data" array
                     LocationListDataWrapper wrapper = JsonUtility.FromJson<LocationListDataWrapper>(response);
                     locationNames = wrapper.data;
-                    // Call the callback function with the location names list
                     callback?.Invoke(locationNames);
                 }
                 else
@@ -154,6 +150,7 @@ namespace Assets.Scripts.Location
         }
         void GetFullLocationName(List<LocationData> locationDataList)
         {
+
             List<LocationData> tempFloorLocations = new List<LocationData>();
             List<LocationData> tempFloor1Locations = new List<LocationData>();
             List<LocationData> tempFloor2Locations = new List<LocationData>();
